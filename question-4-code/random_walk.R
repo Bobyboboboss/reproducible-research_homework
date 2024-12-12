@@ -28,6 +28,7 @@ random_walk  <- function (n_steps) {
   
 }
 
+set.seed(2)
 data1 <- random_walk(500)
 
 plot1 <- ggplot(aes(x = x, y = y), data = data1) +
@@ -40,6 +41,7 @@ plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   
   ylab("y-coordinate")
 
+set.seed(2)
 data2 <- random_walk(500)
 
 plot2 <- ggplot(aes(x = x, y = y), data = data2) +
@@ -53,3 +55,4 @@ plot2 <- ggplot(aes(x = x, y = y), data = data2) +
   ylab("y-coordinate")
 
 grid.arrange(plot1, plot2, ncol=2)
+
